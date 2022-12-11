@@ -1,5 +1,5 @@
-(defpackage #:hello-world
-  (:use #:cl #:clog)
+(defpackage :hello-world
+  (:use :cl :clog)
   (:export start-tutorial))
 
 (in-package :hello-world)
