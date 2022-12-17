@@ -6,8 +6,7 @@
   :depends-on ("clog")
   :components ((:module "src"
                 :components
-                ((:file "hello-world")
-                 (:file "main"))))
+                ((:file "main"))))
   :description "Learning English App"
   :in-order-to ((test-op (test-op "english-learning-mine-app/tests"))))
 
