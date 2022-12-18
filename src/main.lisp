@@ -16,5 +16,9 @@
 
 (defun start-app ()
   "Start App."
-  (initialize #'on-new-window)
+  (initialize
+   'on-new-window
+   :static-root (merge-pathnames
+                 "./static-files/"
+                 (asdf:system-source-directory :english-learning-mine-app)))
   (open-browser))
