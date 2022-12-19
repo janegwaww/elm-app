@@ -1,9 +1,8 @@
-(defpackage :english-learning-mine
-  (:nicknames :elm)
+(defpackage :elm-app
   (:use :cl :clog)
   (:export start-app))
 
-(in-package :english-learning-mine)
+(in-package :elm-app)
 
 (defun on-new-window (body)
   "On new window handler."
@@ -20,5 +19,5 @@
    'on-new-window
    :static-root (merge-pathnames
                  "./static-files/"
-                 (asdf:system-source-directory :english-learning-mine-app)))
+                 (asdf:system-source-directory :elm-app)))
   (open-browser))
