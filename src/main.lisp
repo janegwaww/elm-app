@@ -1,5 +1,5 @@
 (defpackage :elm-app
-  (:use :cl :clog)
+  (:use :cl :clog :clog-web)
   (:export start-app))
 
 (in-package :elm-app)
@@ -7,7 +7,7 @@
 (defun on-new-window (body)
   "On new window handler."
   (setf (title (html-document body)) "English Learning Mine")
-  (navbar body)
+  (create-navbar body)
   (let ((hello-element
           (create-section
            body :h1
