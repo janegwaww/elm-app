@@ -5,7 +5,10 @@
   :serial t
   :depends-on (:clog)
   :components ((:module "src"
-                :components ((:file "main"))))
+                :components
+                ((:file "brand")
+                 (:file "navbar")
+                 (:file "main"))))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
 
