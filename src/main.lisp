@@ -8,6 +8,7 @@
   "On new window handler."
   (setf (title (html-document body)) "English Learning Mine")
   (create-navbar body)
+  (create-hero body)
   (let ((hello-element
           (create-section
            body :h1

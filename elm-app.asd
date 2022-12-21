@@ -6,8 +6,8 @@
   :depends-on (:clog)
   :components ((:module "src"
                 :components
-                ((:file "brand")
-                 (:file "navbar")
+                ((:file "navbar")
+                 (:file "brand")
                  (:file "main"))))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))

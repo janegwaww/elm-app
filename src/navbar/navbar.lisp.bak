@@ -1,0 +1,101 @@
+(in-package "ELM-APP")
+(defclass navbar (clog:clog-panel)
+  (    (navbarExampleTransparentExample :reader navbarExampleTransparentExample)
+    (brand-img :reader brand-img)
+    (brand-link :reader brand-link)
+    (nav-brand :reader nav-brand)
+    (nav :reader nav)
+))
+(defun create-navbar (clog-obj &key (hidden nil) (class nil) (html-id nil) (auto-place t))
+  (let ((panel (change-class (clog:create-div clog-obj :content "
+<nav class=\"navbar is-dark is-transparent\" id=\"CLOGB3880581634\" data-clog-name=\"nav\">
+  <div class=\"container is-max-widescreen\" id=\"CLOGB3880581635\" data-clog-name=\"none-div-1\">
+    <div class=\"navbar-brand\" id=\"CLOGB3880581636\" data-clog-name=\"nav-brand\">
+      <a class=\"navbar-item\" href=\"/\" id=\"CLOGB3880581637\" data-clog-name=\"brand-link\">
+        <img src=\"./img/favicon.png\" alt=\"Bulma: a modern CSS framework based on Flexbox\" style=\"width: 28px; height: 28px;\" class=\"\" id=\"CLOGB3880581638\" data-clog-name=\"brand-img\" width=\"112\" height=\"28\"><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581638\" style=\"left: 11px; top: 13px; width: 28px; height: 26px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+      </a><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581637\" style=\"left: -11px; top: 0px; width: 51px; height: 53px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+      <div class=\"navbar-burger\" style=\"\" id=\"CLOGB3880581639\" data-clog-name=\"none-div-5\">
+        <span id=\"CLOGB3880581640\" data-clog-name=\"none-span-6\"></span><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581640\" style=\"left: 0px; top: 0px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+        <span id=\"CLOGB3880581641\" data-clog-name=\"none-span-7\"></span><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581641\" style=\"left: 0px; top: 0px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+        <span id=\"CLOGB3880581642\" data-clog-name=\"none-span-8\"></span><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581642\" style=\"left: 0px; top: 0px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+      </div><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581639\" style=\"left: 0px; top: 0px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+    </div><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581636\" style=\"left: 0px; top: 0px; width: 51px; height: 64px; box-sizing: content-box; position: absolute; border: 0px none blue;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+
+    <div id=\"navbarExampleTransparentExample\" class=\"navbar-menu\" data-clog-name=\"navbarExampleTransparentExample\">
+      <div class=\"navbar-start\" id=\"CLOGB3880581643\" data-clog-name=\"none-div-9\">
+        <div class=\"navbar-item has-dropdown is-hoverable\" id=\"CLOGB3880581644\" data-clog-name=\"none-div-2\">
+          <a class=\"navbar-link\" href=\"/\" id=\"CLOGB3880581645\" data-clog-name=\"none-a-10\">References</a>
+          <div class=\"navbar-dropdown is-boxed\" id=\"CLOGB3880581646\" data-clog-name=\"none-div-3\">
+            <a class=\"navbar-item\" href=\"/essential\" id=\"CLOGB3880581647\" data-clog-name=\"none-a-4\">Essential</a>
+            <a class=\"navbar-item\" href=\"/intermediate\" id=\"CLOGB3880581648\" data-clog-name=\"none-a-5\">Intermediate</a>
+            <a class=\"navbar-item\" href=\"/advanced\" id=\"CLOGB3880581649\" data-clog-name=\"none-a-6\">Advanced</a>
+            <a class=\"navbar-item\" href=\"/professional\" id=\"CLOGB3880581650\" data-clog-name=\"none-a-7\">Professional</a>
+          </div>
+        </div><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581644\" style=\"left: 39px; top: 0px; width: 127px; height: 53px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+        <div class=\"navbar-item has-dropdown is-hoverable\" id=\"CLOGB3880581651\" data-clog-name=\"none-div-11\">
+          <a class=\"navbar-link\" href=\"https://bulma.io/documentation/overview/start/\" id=\"CLOGB3880581652\" data-clog-name=\"none-a-12\">Practical
+          </a>
+          <div class=\"navbar-dropdown is-boxed\" id=\"CLOGB3880581653\" data-clog-name=\"none-div-13\">
+            <a class=\"navbar-item\" href=\"https://bulma.io/documentation/overview/start/\" id=\"CLOGB3880581654\" data-clog-name=\"none-a-14\">
+              Overview
+            </a>
+            <a class=\"navbar-item\" href=\"https://bulma.io/documentation/overview/modifiers/\" id=\"CLOGB3880581655\" data-clog-name=\"none-a-15\">
+              Modifiers
+            </a>
+            <a class=\"navbar-item\" href=\"https://bulma.io/documentation/columns/basics/\" style=\"inset: 0px;\" id=\"CLOGB3880581656\" data-clog-name=\"none-a-16\">
+              Columns
+            </a>
+            <a class=\"navbar-item\" href=\"https://bulma.io/documentation/layout/container/\" id=\"CLOGB3880581657\" data-clog-name=\"none-a-17\">
+              Layout
+            </a>
+            <a class=\"navbar-item\" href=\"https://bulma.io/documentation/form/general/\" id=\"CLOGB3880581658\" data-clog-name=\"none-a-18\">
+              Form
+            </a>
+            <hr class=\"navbar-divider\" id=\"CLOGB3880581659\" data-clog-name=\"none-hr-19\">
+            <a class=\"navbar-item\" href=\"https://bulma.io/documentation/elements/box/\" id=\"CLOGB3880581660\" data-clog-name=\"none-a-20\">
+              Elements
+            </a>
+            <a class=\"navbar-item is-active\" href=\"https://bulma.io/documentation/components/breadcrumb/\" id=\"CLOGB3880581661\" data-clog-name=\"none-a-21\">
+              Components
+            </a>
+          </div>
+        </div>
+        <div class=\"navbar-item has-dropdown is-hoverable\" id=\"CLOGB3880581662\" data-clog-name=\"none-div-8\">
+          <a class=\"navbar-link\" href=\"/elmpro\" id=\"CLOGB3880581663\" data-clog-name=\"none-a-10\">ELM Pro</a>
+          <div class=\"navbar-dropdown is-boxed\" id=\"CLOGB3880581664\" data-clog-name=\"none-div-9\">
+            <a class=\"navbar-item\" href=\"/prooverview\" id=\"CLOGB3880581665\" data-clog-name=\"none-a-10\">Overview</a>
+            <a class=\"navbar-item\" href=\"/prodocumentation\" id=\"CLOGB3880581666\" data-clog-name=\"none-a-11\">Documentation</a>
+            <a class=\"navbar-item\" href=\"/profaq\" id=\"CLOGB3880581667\" data-clog-name=\"none-a-12\">FAQ</a>
+          </div>
+      </div>
+
+      <div class=\"navbar-end\" id=\"CLOGB3880581668\" data-clog-name=\"none-div-22\">
+        <div class=\"navbar-item\" id=\"CLOGB3880581669\" data-clog-name=\"none-div-23\">
+          <div class=\"field is-grouped\" id=\"CLOGB3880581670\" data-clog-name=\"none-div-24\">
+            <p class=\"control\" id=\"CLOGB3880581671\" data-clog-name=\"none-p-25\">
+              <a class=\"bd-tw-button button\" target=\"_blank\" href=\"https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms\" id=\"CLOGB3880581672\" data-clog-name=\"none-a-26\">
+
+                <span id=\"CLOGB3880581673\" data-clog-name=\"none-span-29\">Theme
+                </span>
+              </a>
+            </p>
+            <p class=\"control\" id=\"CLOGB3880581674\" data-clog-name=\"none-p-30\">
+              <a class=\"button is-primary\" href=\"https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip\" id=\"CLOGB3880581675\" data-clog-name=\"none-a-31\">
+
+                <span id=\"CLOGB3880581676\" data-clog-name=\"none-span-34\">Get ELM Pro</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581643\" style=\"left: 39px; top: 0px; width: 585px; height: 64px; box-sizing: content-box; position: absolute; border: 0px none blue;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+  </div><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-navbarExampleTransparentExample\" style=\"left: 39px; top: 0px; width: 828px; height: 64px; box-sizing: content-box; position: absolute; border: 0px none blue;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+</div><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581635\" style=\"left: 0px; top: 0px; width: 598px; height: 64px; box-sizing: content-box; position: absolute; border: 0px none blue;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div></nav><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880581634\" style=\"left: 0px; top: 0px; width: 598px; height: 53px; box-sizing: content-box; position: absolute; border: 0px none blue;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+"
+         :hidden hidden :class class :html-id html-id :auto-place auto-place) 'navbar)))
+    (setf (slot-value panel 'navbarExampleTransparentExample) (attach-as-child clog-obj "navbarExampleTransparentExample" :clog-type 'CLOG:CLOG-DIV :new-id t))
+    (setf (slot-value panel 'brand-img) (attach-as-child clog-obj "CLOGB3880581638" :clog-type 'CLOG:CLOG-IMG :new-id t))
+    (setf (slot-value panel 'brand-link) (attach-as-child clog-obj "CLOGB3880581637" :clog-type 'CLOG:CLOG-A :new-id t))
+    (setf (slot-value panel 'nav-brand) (attach-as-child clog-obj "CLOGB3880581636" :clog-type 'CLOG:CLOG-DIV :new-id t))
+    (setf (slot-value panel 'nav) (attach-as-child clog-obj "CLOGB3880581634" :clog-type 'CLOG:CLOG-SPAN :new-id t))
+    panel))

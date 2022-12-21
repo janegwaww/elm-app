@@ -1,3 +1,8 @@
+;;;
+;;; The code block in this file will not used in project entirly,
+;;; keep just for show how hand code html looks.
+;;;
+
 (in-package :elm-app)
 
 (defun navbar (body)
