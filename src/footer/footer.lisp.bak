@@ -1,0 +1,16 @@
+(in-package "CLOG-USER")
+(defclass panel-5 (clog:clog-panel)
+  ())
+(defun create-panel-5 (clog-obj &key (hidden nil) (class nil) (html-id nil) (auto-place t))
+  (let ((panel (change-class (clog:create-div clog-obj :content "<footer class=\"footer\" id=\"CLOGB3880619905\" data-clog-name=\"none-footer-1\">
+  <div class=\"content has-text-centered\" id=\"CLOGB3880619906\" data-clog-name=\"none-div-2\">
+    <p id=\"CLOGB3880619907\" data-clog-name=\"none-p-3\">
+      <strong id=\"CLOGB3880619908\" data-clog-name=\"none-strong-4\">Bulma</strong> by <a href=\"https://jgthms.com\" id=\"CLOGB3880619909\" data-clog-name=\"none-a-5\">Jeremy Thomas</a>. The source code is licensed
+      <a href=\"http://opensource.org/licenses/mit-license.php\" id=\"CLOGB3880619910\" data-clog-name=\"none-a-6\">MIT</a>. The website content
+      is licensed <a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\" id=\"CLOGB3880619911\" data-clog-name=\"none-a-7\">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+"
+         :hidden hidden :class class :html-id html-id :auto-place auto-place) 'panel-5)))
+    panel))

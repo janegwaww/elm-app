@@ -9,11 +9,9 @@
   (setf (title (html-document body)) "English Learning Mine")
   (create-navbar body)
   (create-hero body)
-  (let ((hello-element
-          (create-section
-           body :h1
-           :content "Hello world and go no! (click me!)")))
-    (set-on-click hello-element (lambda (obj) t))))
+  (create-breadcrumb body)
+  (create-level-columns (create-container body :class "container is-max-desktop"))
+  (create-footer body))
 
 (defun start-app ()
   "Start App."
