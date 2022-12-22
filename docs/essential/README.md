@@ -17,7 +17,7 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left"><a href="grammar/present/README.html">Present</a></td>
+<td class="org-left">[Present](grammar/present/README.md)</td>
 <td class="org-left">Past</td>
 <td class="org-left">Present perfect</td>
 </tr>
