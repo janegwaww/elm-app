@@ -1,18 +1,7 @@
 
-# Table of Contents
-
-1.  [am/is/are](#org3146ede)
-    1.  [A](#orgbc1ef24)
-    2.  [B](#org36af4b8)
-    3.  [C](#org82cac29)
-
-
-<a id="org3146ede"></a>
 
 # am/is/are
 
-
-<a id="orgbc1ef24"></a>
 
 ## A
 
@@ -28,13 +17,11 @@
     -   I'm interested in art.
 
 
-<a id="org36af4b8"></a>
-
 ## B
 
 -   positive
     
-    <table id="org22f9ebf" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    <table id="orga162f57" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
     
     <colgroup>
@@ -99,7 +86,7 @@
 
 -   negative
     
-    <table id="orgb458c09" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    <table id="orgd229a03" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
     
     <colgroup>
@@ -180,8 +167,6 @@
 
 -   [image] I'm afraid of dogs.
 
-
-<a id="org82cac29"></a>
 
 ## C
 

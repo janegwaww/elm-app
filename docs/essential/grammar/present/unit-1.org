@@ -1,3 +1,5 @@
+#+options: toc:nil
+
 * am/is/are
 
 ** A
