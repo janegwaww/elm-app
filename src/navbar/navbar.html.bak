@@ -1,4 +1,4 @@
-<data id="I3880620840" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="navbar"></data>
+<data id="I3880693049" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="navbar"></data>
 <nav class="navbar is-dark" data-clog-name="nav" data-clog-type="span">
   <div class="container" data-clog-name="container-div" data-clog-type="div">
     <div class="navbar-brand" data-clog-name="nav-brand" data-clog-type="div">
@@ -12,10 +12,10 @@
       </div>
     </div>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu" data-clog-name="navbarExampleTransparentExample" data-clog-type="div">
+    <div id="navbarExampleTransparentExample" class="navbar-menu" data-clog-name="navbar-menu" data-clog-type="div">
       <div class="navbar-start" data-clog-name="none-div-9" data-clog-type="div">
         <div class="navbar-item has-dropdown is-hoverable" data-clog-name="none-div-2" data-clog-type="div">
-          <a class="navbar-link" href="/" data-clog-name="none-a-10" data-clog-type="link">References</a>
+          <a class="navbar-link is-arrowless" href="/" data-clog-name="none-a-10" data-clog-type="link">References</a>
           <div class="navbar-dropdown is-boxed" data-clog-name="none-div-3" data-clog-type="div">
             <a class="navbar-item" href="/essential" data-clog-name="none-a-4" data-clog-type="link">Essential</a>
             <a class="navbar-item" href="/intermediate" data-clog-name="none-a-5" data-clog-type="link">Intermediate</a>
@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable" data-clog-name="none-div-11" data-clog-type="div">
-          <a class="navbar-link" href="https://bulma.io/documentation/overview/start/" data-clog-name="none-a-12" data-clog-type="link">Practical
+          <a class="navbar-link is-arrowless" href="https://bulma.io/documentation/overview/start/" data-clog-name="none-a-12" data-clog-type="link">Practical
           </a>
           <div class="navbar-dropdown is-boxed" data-clog-name="none-div-13" data-clog-type="div">
             <a class="navbar-item" href="https://bulma.io/documentation/overview/start/" data-clog-name="none-a-14" data-clog-type="link">
@@ -42,17 +42,10 @@
             <a class="navbar-item" href="https://bulma.io/documentation/form/general/" data-clog-name="none-a-18" data-clog-type="link">
               Form
             </a>
-            <hr class="navbar-divider" data-clog-name="none-hr-19" data-clog-type="hr">
-            <a class="navbar-item" href="https://bulma.io/documentation/elements/box/" data-clog-name="none-a-20" data-clog-type="link">
-              Elements
-            </a>
-            <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/" data-clog-name="none-a-21" data-clog-type="link">
-              Components
-            </a>
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable" data-clog-name="none-div-8" data-clog-type="div">
-          <a class="navbar-link" href="/elmpro" data-clog-name="none-a-10" data-clog-type="link">ELM Pro</a>
+          <a class="navbar-link is-arrowless" href="/elmpro" data-clog-name="none-a-10" data-clog-type="link">ELM Pro</a>
           <div class="navbar-dropdown is-boxed" data-clog-name="none-div-9" data-clog-type="div">
             <a class="navbar-item" href="/prooverview" data-clog-name="none-a-10" data-clog-type="link">Overview</a>
             <a class="navbar-item" href="/prodocumentation" data-clog-name="none-a-11" data-clog-type="link">Documentation</a>

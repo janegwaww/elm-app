@@ -6,15 +6,15 @@
   :depends-on (:clog)
   :components ((:module "src"
                 :components
-                        ((:file "navbar")
-                         (:file "brand")
-                         (:file "breadcrumb")
-                         (:file "menu-list")
-                         (:file "level-slip-box")
-                         (:file "level-columns")
-                         (:file "footer")
-                         (:file "container")
-                         (:file "main"))))
+                ((:file "./navbar/navbar")
+                 (:file "./hero/hero")
+                 (:file "./breadcrumb/breadcrumb")
+                 (:file "menu-list")
+                 (:file "level-slip-box")
+                 (:file "./level-columns/level-columns")
+                 (:file "./footer/footer")
+                 (:file "container")
+                 (:file "main"))))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
 
