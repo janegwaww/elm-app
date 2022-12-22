@@ -4,7 +4,7 @@
 
 ** [[file:grammar/README.org][Grammar]]
 
-| Present                    | Past                     | Present perfect |
+| [[file:grammar/present/README.org][Present]]                    | Past                     | Present perfect |
 | Passive                    | Verb forms               | Future          |
 | Modals, imperative etc.    | There and it             | Ausiliary verbs |
 | Questions                  | Reported speech          | -ing and to...  |
