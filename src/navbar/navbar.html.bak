@@ -1,6 +1,6 @@
-<data id="I3880582630" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="navbar"></data>
-<nav class="navbar is-dark is-transparent" data-clog-name="nav" data-clog-type="span">
-  <div class="container is-max-widescreen" data-clog-name="none-div-1" data-clog-type="div">
+<data id="I3880620734" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="navbar"></data>
+<nav class="navbar is-dark" data-clog-name="nav" data-clog-type="span">
+  <div class="container" data-clog-name="container-div" data-clog-type="div">
     <div class="navbar-brand" data-clog-name="nav-brand" data-clog-type="div">
       <a class="navbar-item" href="/" data-clog-name="brand-link" data-clog-type="link">
         <img src="./img/favicon.png" alt="Bulma: a modern CSS framework based on Flexbox" data-clog-name="brand-img" data-clog-type="image" style="width: 28px; height: 28px;" class="" width="112" height="28">
