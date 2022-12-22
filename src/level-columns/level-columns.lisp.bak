@@ -1,0 +1,45 @@
+(in-package "CLOG-USER")
+(defclass panel-4 (clog:clog-panel)
+  ())
+(defun create-panel-4 (clog-obj &key (hidden nil) (class nil) (html-id nil) (auto-place t))
+  (let ((panel (change-class (clog:create-div clog-obj :content "<div class=\"columns is-multiline\" id=\"CLOGB3880601547\" data-clog-name=\"none-div-1\">
+  <div class=\"column is-half\" id=\"CLOGB3880601548\" data-clog-name=\"none-div-2\">
+    <div class=\"box\" id=\"CLOGB3880601549\" data-clog-name=\"none-div-3\">
+      <div class=\"content is-normal\" id=\"CLOGB3880601550\" data-clog-name=\"none-div-4\">
+        <h1 id=\"CLOGB3880601551\" data-clog-name=\"none-h1-5\">Essential</h1>
+        <h2 id=\"CLOGB3880601552\" data-clog-name=\"none-h2-6\">Grammar</h2>
+        <p id=\"CLOGB3880601553\" data-clog-name=\"none-p-7\">There are 115 units in the book, each one focusing on a particular area of grammer. The material is organised in grammatical categories, such as tenses, questions and articles. Units are not ordered according to difficulty, and should therefore be selected and used in the order appropriate for the learner(s). The book should not be worked through from beginning to end. The units are listed in the /Contents/ and there is a comprehensive /Index/ at the end of the book.</p>
+      </div>
+    </div>
+  </div>
+  <div class=\"column is-half\" id=\"CLOGB3880601554\" data-clog-name=\"none-div-8\">
+    <div class=\"box\" id=\"CLOGB3880601555\" data-clog-name=\"none-div-9\">
+      <div class=\"content\" id=\"CLOGB3880601556\" data-clog-name=\"none-div-10\">
+        <h1 id=\"CLOGB3880601557\" data-clog-name=\"none-h1-11\">Essential</h1>
+        <h2 id=\"CLOGB3880601558\" data-clog-name=\"none-h2-12\">Grammar</h2>
+        <p id=\"CLOGB3880601559\" data-clog-name=\"none-p-13\">There are 115 units in the book, each one focusing on a particular area of grammer. The material is organised in grammatical categories, such as tenses, questions and articles. Units are not ordered according to difficulty, and should therefore be selected and used in the order appropriate for the learner(s). The book should not be worked through from beginning to end. The units are listed in the /Contents/ and there is a comprehensive /Index/ at the end of the book.</p>
+      </div>
+    </div>
+  </div>
+  <div class=\"column is-half\" id=\"CLOGB3880601560\" data-clog-name=\"none-div-14\">
+    <div class=\"box\" id=\"CLOGB3880601561\" data-clog-name=\"none-div-15\">
+      <div class=\"content\" id=\"CLOGB3880601562\" data-clog-name=\"none-div-16\">
+        <h1 id=\"CLOGB3880601563\" data-clog-name=\"none-h1-17\">Essential</h1>
+        <h2 id=\"CLOGB3880601564\" data-clog-name=\"none-h2-18\">Grammar</h2>
+        <p id=\"CLOGB3880601565\" data-clog-name=\"none-p-19\">There are 115 units in the book, each one focusing on a particular area of grammer. The material is organised in grammatical categories, such as tenses, questions and articles. Units are not ordered according to difficulty, and should therefore be selected and used in the order appropriate for the learner(s). The book should not be worked through from beginning to end. The units are listed in the /Contents/ and there is a comprehensive /Index/ at the end of the book.</p>
+      </div>
+    </div>
+  </div>
+  <div class=\"column is-half\" id=\"CLOGB3880601566\" data-clog-name=\"none-div-20\">
+    <div class=\"box\" id=\"CLOGB3880601567\" data-clog-name=\"none-div-21\">
+      <div class=\"content\" id=\"CLOGB3880601568\" data-clog-name=\"none-div-22\">
+        <h1 id=\"CLOGB3880601569\" data-clog-name=\"none-h1-23\">Essential</h1>
+        <h2 id=\"CLOGB3880601570\" data-clog-name=\"none-h2-24\">Grammar</h2>
+        <p id=\"CLOGB3880601571\" data-clog-name=\"none-p-25\">There are 115 units in the book, each one focusing on a particular area of grammer. The material is organised in grammatical categories, such as tenses, questions and articles. Units are not ordered according to difficulty, and should therefore be selected and used in the order appropriate for the learner(s). The book should not be worked through from beginning to end. The units are listed in the /Contents/ and there is a comprehensive /Index/ at the end of the book.</p>
+      </div>
+    </div>
+  </div>
+</div>
+"
+         :hidden hidden :class class :html-id html-id :auto-place auto-place) 'panel-4)))
+    panel))

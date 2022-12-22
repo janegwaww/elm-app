@@ -8,6 +8,10 @@
                 :components
                 ((:file "navbar")
                  (:file "brand")
+                 (:file "breadcrumb")
+                 (:file "level-columns")
+                 (:file "footer")
+                 (:file "container")
                  (:file "main"))))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
