@@ -1,5 +1,3 @@
-
-
 # am/is/are
 
 
@@ -21,133 +19,25 @@
 
 -   positive
     
-    <table id="orga162f57" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">I</th>
-    <th scope="col" class="org-left">am</th>
-    <th scope="col" class="org-left">(I'm)</th>
-    </tr>
-    </thead>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">he</td>
-    <td class="org-left">is</td>
-    <td class="org-left">(he's)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">she</td>
-    <td class="org-left">is</td>
-    <td class="org-left">(she's)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">it</td>
-    <td class="org-left">is</td>
-    <td class="org-left">(it's)</td>
-    </tr>
-    </tbody>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">we</td>
-    <td class="org-left">are</td>
-    <td class="org-left">(we're)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">you</td>
-    <td class="org-left">are</td>
-    <td class="org-left">(you're)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">they</td>
-    <td class="org-left">are</td>
-    <td class="org-left">(they're)</td>
-    </tr>
-    </tbody>
-    </table>
+    | I    | am  | (I'm)     |
+    |---- |--- |--------- |
+    | he   | is  | (he's)    |
+    | she  | is  | (she's)   |
+    | it   | is  | (it's)    |
+    | we   | are | (we're)   |
+    | you  | are | (you're)  |
+    | they | are | (they're) |
 
 -   negative
     
-    <table id="orgd229a03" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-    
-    
-    <colgroup>
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    
-    <col  class="org-left" />
-    </colgroup>
-    <thead>
-    <tr>
-    <th scope="col" class="org-left">I</th>
-    <th scope="col" class="org-left">am not</th>
-    <th scope="col" class="org-left">(I'm not)</th>
-    </tr>
-    </thead>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">he</td>
-    <td class="org-left">is not</td>
-    <td class="org-left">(he's not  or he isn't)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">she</td>
-    <td class="org-left">is not</td>
-    <td class="org-left">(she's not  or she isn't)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">it</td>
-    <td class="org-left">is not</td>
-    <td class="org-left">(it's not  or it isn't)</td>
-    </tr>
-    </tbody>
-    
-    <tbody>
-    <tr>
-    <td class="org-left">we</td>
-    <td class="org-left">are not</td>
-    <td class="org-left">(we're not  or we aren't)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">you</td>
-    <td class="org-left">are not</td>
-    <td class="org-left">(you're not or you aren't)</td>
-    </tr>
-    
-    
-    <tr>
-    <td class="org-left">they</td>
-    <td class="org-left">are not</td>
-    <td class="org-left">(they're not or they aren't)</td>
-    </tr>
-    </tbody>
-    </table>
+    | I    | am not  | (I'm not)                    |
+    |---- |------- |---------------------------- |
+    | he   | is not  | (he's not  or he isn't)      |
+    | she  | is not  | (she's not  or she isn't)    |
+    | it   | is not  | (it's not  or it isn't)      |
+    | we   | are not | (we're not  or we aren't)    |
+    | you  | are not | (you're not or you aren't)   |
+    | they | are not | (they're not or they aren't) |
 
 -   list1
     -   I'm cold. Can you close the window, please?
@@ -178,4 +68,3 @@
 -   [image]
     -   Here's your key.
     -   Thank you.
-
