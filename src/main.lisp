@@ -9,9 +9,9 @@
   (setf (title (html-document body)) "English Learning Mine")
   (create-navbar body)
   (create-hero body)
-  (create-breadcrumb body)
-  (create-level-columns (create-container body :class "container is-max-desktop"))
+  (create-level-columns (slot-value (create-container body) 'container-div))
   (create-footer body))
+
 
 (defun start-app ()
   "Start App."

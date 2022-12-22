@@ -6,19 +6,22 @@
   :depends-on (:clog)
   :components ((:module "src"
                 :components
-                ((:file "navbar")
-                 (:file "brand")
-                 (:file "breadcrumb")
-                 (:file "level-columns")
-                 (:file "footer")
-                 (:file "container")
-                 (:file "main"))))
+                        ((:file "navbar")
+                         (:file "brand")
+                         (:file "breadcrumb")
+                         (:file "menu-list")
+                         (:file "level-slip-box")
+                         (:file "level-columns")
+                         (:file "footer")
+                         (:file "container")
+                         (:file "main"))))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
 
 (asdf:defsystem :elm-app/tools
   :depends-on (:elm-app :clog/tools)
-  :components ())
+  :components ((:module "tools"
+                :components ((:file "main")))))
 
 (asdf:defsystem :elm-app/tests
   :author "JaneGwaww"
