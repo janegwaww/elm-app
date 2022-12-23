@@ -13,6 +13,22 @@
 | Conjunctions and clauses   | Prepositions             | Phrasal verbs   |
 | Appendices                 |                          |                 |
 
-* Pronunciation
+* [[file:pronunciation/README.org][Pronunciation]]
 
-* Vocabulary
+| Section A: Sounds and spelling            |
+| Section B: Syllables and words            |
+| Section C: Phrases, sentences and grammar |
+| Section D: Conversation                   |
+| Section E: Reference                      |
+
+* [[file:vocabulary/README.org][Vocabulary]]
+
+| Learner training     |
+| Everyday verbs       |
+| Words and grammar    |
+| People               |
+| The Wrold            |
+| At home              |
+| School and workplace |
+| Leisure              |
+| Social issues        |
