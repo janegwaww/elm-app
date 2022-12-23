@@ -13,7 +13,7 @@
 | Appendices                           |                          |                     |
 
 
-# [Pronunciation](pronunciation/README.md)
+## [Pronunciation](pronunciation/README.md)
 
 | Section A: Sounds and spelling            |
 | Section B: Syllables and words            |
@@ -22,7 +22,7 @@
 | Section E: Reference                      |
 
 
-# [Vocabulary](vocabulary/README.md)
+## [Vocabulary](vocabulary/README.md)
 
 | Learner training     |
 | Everyday verbs       |

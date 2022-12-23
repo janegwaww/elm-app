@@ -13,7 +13,7 @@
 | Conjunctions and clauses   | Prepositions             | Phrasal verbs   |
 | Appendices                 |                          |                 |
 
-* [[file:pronunciation/README.org][Pronunciation]]
+** [[file:pronunciation/README.org][Pronunciation]]
 
 | Section A: Sounds and spelling            |
 | Section B: Syllables and words            |
@@ -21,7 +21,7 @@
 | Section D: Conversation                   |
 | Section E: Reference                      |
 
-* [[file:vocabulary/README.org][Vocabulary]]
+** [[file:vocabulary/README.org][Vocabulary]]
 
 | Learner training     |
 | Everyday verbs       |
