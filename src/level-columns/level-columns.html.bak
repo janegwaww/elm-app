@@ -1,14 +1,14 @@
-<data id="I3880692117" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="level-columns"></data><div class="columns is-multiline" data-clog-name="level-columns-div" data-clog-type="div">
+<data id="I3880692652" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="level-columns"></data><div class="columns is-multiline" data-clog-name="level-columns-div" data-clog-type="div">
   <div class="column is-half" data-clog-name="column-item" data-clog-type="div">
-    <div class="box" data-clog-name="none-div-3" data-clog-type="div">
-      <div class="content is-normal" data-clog-name="none-div-4" data-clog-type="div">
-        <h3 data-clog-name="none-h1-5" data-clog-type="span"><a href="/essential" data-clog-name="none-a-1" data-clog-type="link">Essential</a>
-</h3>
-        <h2 data-clog-name="none-h2-6" data-clog-type="span">Grammar</h2>
-        <p data-clog-name="none-p-7" data-clog-type="p" style="vertical-align: baseline; overflow: hidden; max-height: 4.4rem;">There are 115 units in the book, each one focusing on a particular area of grammer. The material is organised in grammatical categories, such as tenses, questions and articles. Units are not ordered according to difficulty, and should therefore be selected and used in the order appropriate for the learner(s). The book should not be worked through from beginning to end. The units are listed in the /Contents/ and there is a comprehensive /Index/ at the end of the book.</p>
-      </div>
-    </div>
+
   </div>
+<div class="column is-half" data-clog-name="column-item" data-clog-type="div">
 
+  </div>
+<div class="column is-half" data-clog-name="column-item" data-clog-type="div">
 
+  </div>
+<div class="column is-half" data-clog-name="column-item" data-clog-type="div">
+
+  </div>
 </div>
