@@ -9,12 +9,18 @@
                 ((:file "./navbar/navbar")
                  (:file "./hero/hero")
                  (:file "./breadcrumb/breadcrumb")
-                 (:file "menu-list")
+                 (:file "./menu-list/menu-list")
                  (:file "./slip-box/level-slip-box")
                  (:file "./level-columns/level-columns")
                  (:file "./info-list/recent-list")
                  (:file "./footer/footer")
                  (:file "container")
+                 ;; pages
+                 (:file "./pages/essential-page")
+                 (:file "./pages/intermediate-page")
+                 (:file "./pages/advanced-page")
+                 (:file "./pages/professional-page")
+                 ;; main
                  (:file "main"))))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))

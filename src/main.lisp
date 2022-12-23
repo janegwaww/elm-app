@@ -35,6 +35,9 @@
    :static-root (merge-pathnames
                  "./static-files/"
                  (asdf:system-source-directory :elm-app)))
-  (set-on-new-window 'on-new-brand :path "/brand")
+  (set-on-new-window 'on-new-essential-page :path "/essential")
+  (set-on-new-window 'on-new-intermediate-page :path "/intermediate")
+  (set-on-new-window 'on-new-advanced-page :path "/advanced")
+  (set-on-new-window 'on-new-professional-page :path "/professional")
   (set-on-new-window 'on-new-window :path :default)
   (open-browser))
