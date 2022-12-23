@@ -1,9 +1,45 @@
-<data id="I3880619960" data-in-package="clog-user" data-custom-slots="" data-clog-next-id="1" data-clog-title="panel-5"></data><footer class="footer" data-clog-name="none-footer-1" data-clog-type="span">
-  <div class="content has-text-centered" data-clog-name="none-div-2" data-clog-type="div">
-    <p data-clog-name="none-p-3" data-clog-type="p">
-      <strong data-clog-name="none-strong-4" data-clog-type="span">Bulma</strong> by <a href="https://jgthms.com" data-clog-name="none-a-5" data-clog-type="link">Jeremy Thomas</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php" data-clog-name="none-a-6" data-clog-type="link">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" data-clog-name="none-a-7" data-clog-type="link">CC BY NC SA 4.0</a>.
-    </p>
+<data id="I3880620041" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="footer"></data><footer class="footer" data-clog-name="footer-div" data-clog-type="span">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="content">
+          <h6>ELM</h6>
+          <p>Share it. Celebrate it. Build it.</p>
+        </div>
+      </div>
+      <div class="column is-two-thirds">
+        <div class="columns">
+          <div class="column is-one-third">
+            <p class="subtitle is-5 is-spaced">About Me</p>
+            <p class="subtitle is-6">Blog</p>
+            <p class="subtitle is-6">Github</p>
+            <p class="subtitle is-6">ELM Article</p>
+            <p class="subtitle is-6">Podcast</p>
+          </div>
+          <div class="column is-one-third">
+            <p class="subtitle is-5 is-spaced">Support Me</p>
+            <p class="subtitle is-6">Petroen</p>
+            <p class="subtitle is-6">PayPal</p>
+            <p class="subtitle is-6">Buy Me A Coffee</p>
+          </div>
+          <div class="column is-one-third">
+            <p class="subtitle is-5 is-spaced">Contact Me</p>
+            <p class="subtitle is-6">Email</p>
+            <p class="subtitle is-6">Github</p>
+            <p class="subtitle is-6">IRC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-privacy-link" style="border-top:1px solid #cdcdcd;">
+      <a class="navbar-item" href="/" data-clog-name="brand-link" data-clog-type="link">
+        <img src="./img/favicon.png" alt="Bulma: a modern CSS framework based on Flexbox" data-clog-name="brand-img" data-clog-type="image" style="width: 28px; height: 28px;" class="" width="112" height="28">
+      </a>
+    </div>
+    <br />
+    <div class="footer-bottom-info">
+      <p>Visit <a href="https://www.janegwaww.com">JaneGwaww</a> for more information.</p>
+      <p>Portions of this content are ©2022–2023 by individual JaneGwaww contributors. Content available under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+    </div>
   </div>
 </footer>
