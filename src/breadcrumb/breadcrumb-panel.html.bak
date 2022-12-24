@@ -1,6 +1,6 @@
-<data id="I3880599171" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="breadcrumb"></data><nav class="breadcrumb is-medium has-background-white-ter pt-1 pb-1" aria-label="breadcrumbs" data-clog-name="bread" data-clog-type="span" style="border: 1px solid rgb(205, 205, 205);">
-  <div class="container is-max-widescreen" data-clog-name="none-div-2" data-clog-type="div">
-    <ul data-clog-name="none-ul-3" data-clog-type="ul">
+<data id="I3880853074" data-in-package="elm-app" data-custom-slots="" data-clog-next-id="1" data-clog-title="breadcrumb"></data><nav class="breadcrumb is-medium has-background-white-ter pt-1 pb-1" aria-label="breadcrumbs" data-clog-name="bread" data-clog-type="span" style="border: 1px solid rgb(205, 205, 205);">
+  <div class="container" data-clog-name="bread-container" data-clog-type="div">
+    <ul data-clog-name="bread-ul" data-clog-type="ul">
     <li data-clog-name="none-li-4" data-clog-type="li"><a href="#" data-clog-name="none-a-5" data-clog-type="link">Bulma</a></li>
     <li data-clog-name="none-li-6" data-clog-type="li"><a href="#" data-clog-name="none-a-7" data-clog-type="link">Documentation</a></li>
     <li data-clog-name="none-li-8" data-clog-type="li"><a href="#" data-clog-name="none-a-9" data-clog-type="link">Components</a></li>

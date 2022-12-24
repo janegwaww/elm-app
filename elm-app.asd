@@ -5,12 +5,13 @@
   :serial t
   :pathname "src"
   :depends-on (:clog)
-  :components ((:file "main") ;; main
+  :components ((:module "breadcrumb"
+                :components ((:file "breadcrumb")
+                             (:file "breadcrumb-panel")))
+               (:file "main") ;; main
                (:file "elm-pro")
-               ;; components
                (:file "./navbar/navbar")
                (:file "./hero/hero")
-               (:file "./breadcrumb/breadcrumb")
                (:file "./menu-list/menu-list")
                (:file "./slip-box/level-slip-box")
                (:file "./level-columns/level-columns")
@@ -36,7 +37,6 @@
   :license "(CC BY-NC-SA 4.0)"
   :depends-on (:elm-app :rove)
   :pathname "tests"
-  :components ((:module "tests"
-                :components ((:file "main"))))
+  :components ((:file "main"))
   :description "Test system for english-learning-mine"
   :perform (test-op (op c) (symbol-call :rove :run c)))
