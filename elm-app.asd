@@ -6,6 +6,8 @@
   :pathname "src"
   :depends-on (:clog)
   :components ((:file "main") ;; main
+               (:file "elm-pro")
+               ;; components
                (:file "./navbar/navbar")
                (:file "./hero/hero")
                (:file "./breadcrumb/breadcrumb")
