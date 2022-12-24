@@ -27,8 +27,7 @@
 (asdf:defsystem :elm-app/tools
   :depends-on (:elm-app :clog/tools)
   :pathname "tools"
-  :components ((:module "tools"
-                :components ((:file "main")))))
+  :components ())
 
 (asdf:defsystem :elm-app/tests
   :author "JaneGwaww"
