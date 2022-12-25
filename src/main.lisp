@@ -18,7 +18,7 @@
     (create-level-info-box (slot-value lc 'column-item-3))
     (create-level-info-box (slot-value lc 'column-item-4)))
   (let* ((box (create-container (create-div body :class "block")))
-         (title (create-section (slot-value box 'container-div) :h1 :class "title" :content "Recent Activities")))
+         (title (create-section (slot-value box 'container-div) :h1 :class "title" :content "Bookmarks")))
     (create-recent-list (slot-value box 'container-div)))
   (let* ((box (create-container (create-div body :class "block")))
          (title (create-section (slot-value box 'container-div) :h1 :class "title" :content "Latest News")))
