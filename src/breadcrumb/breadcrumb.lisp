@@ -9,7 +9,9 @@
 (in-package :breadcrumb)
 
 (defclass breadcrumb (clog-element)
-  ((panel :accessor panel))
+  ((panel :accessor panel)
+   (path :accessor path
+         :initform "/"))
   (:documentation "Breadcrumb Element Object."))
 
 (defgeneric create-breadcrumb (clog-obj &key hidden class html-id auto-place)
@@ -21,14 +23,26 @@
                                 (hidden nil)
                                 (html-id nil)
                                 (auto-place t))
-  (let ((new-obj (create-div obj :class class
+  (let ((path (get-path obj))
+        (new-obj (create-div obj :class class
                                  :hidden hidden
                                  :html-id html-id
-                                 :auto-place auto-place))
-        (path (get-path obj)))
+                                 :auto-place auto-place)))
     (change-class new-obj 'breadcrumb)
     (attach-breadcrumb new-obj path)
+    (create-ul-items new-obj)
     new-obj))
+
+(defmethod create-ul-items ((obj breadcrumb))
+  (let ((ul (slot-value (panel obj) 'bread-ul))
+        (plist (ppcre:split "/" (path obj))))
+    (do ((ls plist (cdr ls))
+         (address ""))
+        ((null ls))
+      (if (string/= "" (car ls))
+          (create-a (create-list-item ul :class (and (null (cdr ls)) "is-active"))
+                    :link (setf address (concatenate 'string "/" address (car ls)))
+                    :content (string-capitalize (car ls)))))))
 
 (defun get-path (body)
   (check-type body clog:clog-body)
@@ -37,17 +51,10 @@
 (defun init-breadcrumb (obj)
   (check-type obj clog:clog-obj))
 
-(defmethod attach-breadcrumb ((obj breadcrumb) path)
+(defmethod attach-breadcrumb ((obj breadcrumb) (path string))
   (init-breadcrumb obj)
-  (let* ((bpanel (create-breadcrumb-panel obj))
-         (ul (slot-value bpanel 'bread-ul))
-         (plist (ppcre:split "/" path)))
-    (mapcar (lambda (s)
-              (if (string/= "" s)
-                  (create-a (create-list-item ul)
-                            :content (string-capitalize s))))
-            plist)
-    (setf (panel obj) bpanel)))
+  (setf (panel obj) (create-breadcrumb-panel obj))
+  (setf (path obj) path))
 
 (defun on-test-breadcrumb (body)
   (clog:debug-mode body)
