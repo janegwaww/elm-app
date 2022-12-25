@@ -1,18 +1,83 @@
 (in-package "ELM-APP")
 (defclass footer (clog:clog-panel)
-  (    (footer-div :reader footer-div)
+  (    (brand-img :reader brand-img)
+    (brand-link :reader brand-link)
+    (footer-div :reader footer-div)
 ))
 (defun create-footer (clog-obj &key (hidden nil) (class nil) (html-id nil) (auto-place t))
-  (let ((panel (change-class (clog:create-div clog-obj :content "<footer class=\"footer\" id=\"CLOGB3880619905\" data-clog-name=\"footer-div\">
-  <div class=\"content has-text-centered\" id=\"CLOGB3880619906\" data-clog-name=\"none-div-2\">
-    <p id=\"CLOGB3880619907\" data-clog-name=\"none-p-3\">
-      <strong id=\"CLOGB3880619908\" data-clog-name=\"none-strong-4\">Bulma</strong><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880619908\" style=\"left: 47px; top: 45px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div> by <a href=\"https://jgthms.com\" id=\"CLOGB3880619909\" data-clog-name=\"none-a-5\">Jeremy Thomas</a><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880619909\" style=\"left: 120px; top: 45px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>. The source code is licensed
-      <a href=\"http://opensource.org/licenses/mit-license.php\" id=\"CLOGB3880619910\" data-clog-name=\"none-a-6\">MIT</a><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880619910\" style=\"left: 432px; top: 45px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>. The website content
-      is licensed <a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\" id=\"CLOGB3880619911\" data-clog-name=\"none-a-7\">CC BY NC SA 4.0</a><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880619911\" style=\"left: 308px; top: 67px; width: 0px; height: 0px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>.
-    </p><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880619907\" style=\"left: 22px; top: 45px; width: 553px; height: 45px; box-sizing: content-box; position: absolute;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
-  </div><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880619906\" style=\"left: 22px; top: 45px; width: 553px; height: 45px; box-sizing: content-box; position: absolute; border: 0px none blue;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
-</footer><div class=\"placer ui-draggable ui-draggable-handle ui-resizable ui-resizable-autohide\" id=\"p-CLOGB3880619905\" style=\"left: 0px; top: 0px; width: 598px; height: 203px; box-sizing: content-box; position: absolute; border: 0px none blue;\" tabindex=\"-1\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90; display: none;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90; display: none;\"></div></div>
+  (let ((panel (change-class (clog:create-div clog-obj :content "<footer class=\"footer\" id=\"CLOGB3880940811\" data-clog-name=\"footer-div\">
+  <div class=\"container\" id=\"CLOGB3880940812\" data-clog-name=\"none-div-1\">
+    <div class=\"columns\" id=\"CLOGB3880940813\" data-clog-name=\"none-div-2\">
+      <div class=\"column is-one-third\" id=\"CLOGB3880940814\" data-clog-name=\"none-div-3\">
+        <div class=\"content has-text-grey\" id=\"CLOGB3880940815\" data-clog-name=\"none-div-4\">
+          <h6 id=\"CLOGB3880940816\" data-clog-name=\"none-h6-5\"><a href=\"/\" rel=\"_self\" id=\"CLOGB3880940817\" data-clog-name=\"none-a-1\">ELM</a></h6>
+          <p id=\"CLOGB3880940818\" data-clog-name=\"none-p-6\">Share it. Celebrate it. Build it.</p>
+          <h3 id=\"CLOGB3880940819\" data-clog-name=\"none-h3-1\">
+            <a href=\"https://www.janegwaww.com\" rel=\"_self\" class=\"has-text-grey\" id=\"CLOGB3880940820\" data-clog-name=\"none-a-2\"><span class=\"icon\" id=\"CLOGB3880940821\" data-clog-name=\"none-span-3\"><i class=\"fa-solid fa-globe\" id=\"CLOGB3880940822\" data-clog-name=\"none-i-4\"></i></span></a>
+            <a href=\"https://github.com/janegwaww\" rel=\"_self\" class=\"ml-3 has-text-grey\" id=\"CLOGB3880940823\" data-clog-name=\"none-a-5\"><span class=\"icon\" id=\"CLOGB3880940824\" data-clog-name=\"none-span-6\"><i class=\"fa-brands fa-github\" id=\"CLOGB3880940825\" data-clog-name=\"none-i-7\"></i></span></a>
+          </h3>
+        </div>
+      </div>
+      <div class=\"column is-two-thirds\" id=\"CLOGB3880940826\" data-clog-name=\"none-div-7\">
+        <div class=\"columns\" id=\"CLOGB3880940827\" data-clog-name=\"none-div-8\">
+          <div class=\"column is-one-third\" id=\"CLOGB3880940828\" data-clog-name=\"none-div-9\">
+            <p class=\"subtitle is-5 is-spaced\" id=\"CLOGB3880940829\" data-clog-name=\"none-p-10\">About Me</p>
+            <ul class=\"content has-text-grey\" id=\"CLOGB3880940830\" data-clog-name=\"none-ul-2\">
+              <li id=\"CLOGB3880940831\" data-clog-name=\"none-li-3\"><a rel=\"_self\" href=\"http://www.janegwaww.com\" id=\"CLOGB3880940832\" data-clog-name=\"none-a-4\">Blog</a></li>
+              <li id=\"CLOGB3880940833\" data-clog-name=\"none-li-5\"><a href=\"https://github.com/janegwaww\" target=\"_blank\" id=\"CLOGB3880940834\" data-clog-name=\"none-a-6\">Github</a></li>
+              <li id=\"CLOGB3880940835\" data-clog-name=\"none-li-7\"><a href=\"http://www.janegwaww.com\" rel=\"_self\" id=\"CLOGB3880940836\" data-clog-name=\"none-a-8\">ELM Article</a></li>
+              <li id=\"CLOGB3880940837\" data-clog-name=\"none-li-9\"><a href=\"https://podcast.janegwaww.com/\" id=\"CLOGB3880940838\" data-clog-name=\"none-a-10\">Podcasr</a></li>
+            </ul>
+          </div>
+          <div class=\"column is-one-third\" id=\"CLOGB3880940839\" data-clog-name=\"none-div-15\">
+            <p class=\"subtitle is-5 is-spaced\" id=\"CLOGB3880940840\" data-clog-name=\"none-p-16\">Support Me</p>
+            <ul class=\"content has-text-grey\" id=\"CLOGB3880940841\" data-clog-name=\"none-ul-11\">
+              <li id=\"CLOGB3880940842\" data-clog-name=\"none-li-12\"><a href=\"https://www.patreon.com/janegwaww\" target=\"_blank\" id=\"CLOGB3880940843\" data-clog-name=\"none-a-13\">
+                  <span class=\"icon-text\" id=\"CLOGB3880940844\" data-clog-name=\"none-span-14\">
+                    <span class=\"icon\" id=\"CLOGB3880940845\" data-clog-name=\"none-span-15\"><i class=\"fa-brands fa-patreon\" id=\"CLOGB3880940846\" data-clog-name=\"none-i-16\"></i></span>
+                    <span id=\"CLOGB3880940847\" data-clog-name=\"none-span-17\">Patreon</span>
+                  </span>
+              </a></li>
+              <li id=\"CLOGB3880940848\" data-clog-name=\"none-li-18\"><a href=\"https://paypal.me/janegwaww\" target=\"_blank\" id=\"CLOGB3880940849\" data-clog-name=\"none-a-19\">
+                  <span class=\"icon-text\" id=\"CLOGB3880940850\" data-clog-name=\"none-span-20\">
+                    <span class=\"icon\" id=\"CLOGB3880940851\" data-clog-name=\"none-span-21\"><i class=\"fa-brands fa-paypal\" id=\"CLOGB3880940852\" data-clog-name=\"none-i-22\"></i></span>
+                    <span id=\"CLOGB3880940853\" data-clog-name=\"none-span-23\">PayPal</span>
+                  </span>
+              </a></li>
+              <li id=\"CLOGB3880940854\" data-clog-name=\"none-li-24\"><a href=\"https://www.buymeacoffee.com/JaneGwaww\" target=\"_blank\" id=\"CLOGB3880940855\" data-clog-name=\"none-a-25\">
+                  <span class=\"icon-text\" id=\"CLOGB3880940856\" data-clog-name=\"none-span-26\">
+                    <span class=\"icon\" id=\"CLOGB3880940857\" data-clog-name=\"none-span-27\"><i class=\"fa-solid fa-mug-hot\" id=\"CLOGB3880940858\" data-clog-name=\"none-i-28\"></i></span>
+                    <span id=\"CLOGB3880940859\" data-clog-name=\"none-span-29\">Buy Me A Coffee</span>
+                  </span>
+              </a></li>
+            </ul>
+          </div>
+          <div class=\"column is-one-third\" id=\"CLOGB3880940860\" data-clog-name=\"none-div-20\">
+            <p class=\"subtitle is-5 is-spaced\" id=\"CLOGB3880940861\" data-clog-name=\"none-p-21\">Contact Me</p>
+            <ul class=\"content has-text-grey\" id=\"CLOGB3880940862\" data-clog-name=\"none-ul-30\">
+              <li id=\"CLOGB3880940863\" data-clog-name=\"none-li-31\"><a href=\"mailto:tiglapiles@gmail.com\" id=\"CLOGB3880940864\" data-clog-name=\"none-a-32\">Email</a></li>
+              <li id=\"CLOGB3880940865\" data-clog-name=\"none-li-33\"><a href=\"https://github.com/janegwaww\" target=\"_blank\" id=\"CLOGB3880940866\" data-clog-name=\"none-a-34\">Github</a></li>
+              <li id=\"CLOGB3880940867\" data-clog-name=\"none-li-35\"><a href=\"https://libera.chat\" target=\"_blank\" id=\"CLOGB3880940868\" data-clog-name=\"none-a-36\">IRC</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=\"footer-privacy-link\" style=\"border-top:1px solid #cdcdcd;\" id=\"CLOGB3880940869\" data-clog-name=\"none-div-25\">
+      <a class=\"navbar-item\" href=\"/\" id=\"CLOGB3880940870\" data-clog-name=\"brand-link\">
+        <img src=\"./img/favicon.png\" alt=\"ELM\" style=\"width: 28px; height: 28px;\" class=\"\" id=\"CLOGB3880940871\" data-clog-name=\"brand-img\" width=\"112\" height=\"28\">
+      </a>
+    </div>
+    <br id=\"CLOGB3880940872\" data-clog-name=\"none-br-26\">
+    <div class=\"footer-bottom-info\" id=\"CLOGB3880940873\" data-clog-name=\"none-div-27\">
+      <p id=\"CLOGB3880940874\" data-clog-name=\"none-p-28\">Visit <a href=\"https://www.janegwaww.com\" id=\"CLOGB3880940875\" data-clog-name=\"none-a-29\">JaneGwaww</a> for more information. Powered By <a href=\"https://github.com/rabbibotton/clog\" id=\"CLOGB3880940876\" data-clog-name=\"none-a-1\">CLOG</a></p>
+      <p id=\"CLOGB3880940877\" data-clog-name=\"none-p-30\">Portions of this content are ©2022–2023 by individual JaneGwaww contributors. Content available under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\" id=\"CLOGB3880940878\" data-clog-name=\"none-a-31\">CC BY-NC-SA 4.0</a></p>
+    </div>
+  </div>
+</footer>
 "
          :hidden hidden :class class :html-id html-id :auto-place auto-place) 'footer)))
-    (setf (slot-value panel 'footer-div) (attach-as-child clog-obj "CLOGB3880619905" :clog-type 'CLOG:CLOG-SPAN :new-id t))
+    (setf (slot-value panel 'brand-img) (attach-as-child clog-obj "CLOGB3880940871" :clog-type 'CLOG:CLOG-IMG :new-id t))
+    (setf (slot-value panel 'brand-link) (attach-as-child clog-obj "CLOGB3880940870" :clog-type 'CLOG:CLOG-A :new-id t))
+    (setf (slot-value panel 'footer-div) (attach-as-child clog-obj "CLOGB3880940811" :clog-type 'CLOG:CLOG-SPAN :new-id t))
     panel))

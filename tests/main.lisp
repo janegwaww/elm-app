@@ -1,8 +1,7 @@
-(defpackage elm-app/tests/main
-  (:use :cl
-   :elm-app
-        :rove))
-(in-package :elm-app/tests/main)
+(defpackage elm-app/tests
+  (:use :cl :elm-app :rove))
+
+(in-package :elm-app/tests)
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :elm-app)' in your Lisp.
 

@@ -1,0 +1,10 @@
+(in-package :elm-app)
+
+(defun on-new-essential-page (body)
+  (setf (title (html-document body)) "Essential | ELM")
+  (let* ((nav (create-navbar body))
+         (bread (create-breadcrumb body))
+         (br (create-section body :br))
+         (box (create-div body :class "container")))
+    (create-menu-list box)
+    (create-footer body)))

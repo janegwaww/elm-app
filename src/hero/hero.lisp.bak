@@ -7,22 +7,22 @@
     (hero-section :reader hero-section)
 ))
 (defun create-hero (clog-obj &key (hidden nil) (class nil) (html-id nil) (auto-place t))
-  (let ((panel (change-class (clog:create-div clog-obj :content "<section class=\"hero is-medium is-dark\" id=\"CLOGB3880599340\" data-clog-name=\"hero-section\">
+  (let ((panel (change-class (clog:create-div clog-obj :content "<section class=\"hero is-medium is-dark\" id=\"CLOGB3880690625\" data-clog-name=\"hero-section\">
 
-<div class=\"hero-body\" id=\"CLOGB3880599341\" data-clog-name=\"hero-body\">
-  <div class=\"container is-max-desktop\" id=\"CLOGB3880599342\" data-clog-name=\"hero-body-container\">
-    <p class=\"title\" id=\"CLOGB3880599343\" data-clog-name=\"hero-title\">English Learning Mine
+<div class=\"hero-body\" id=\"CLOGB3880690626\" data-clog-name=\"hero-body\">
+  <div class=\"container is-max-desktop\" id=\"CLOGB3880690627\" data-clog-name=\"hero-body-container\">
+    <p class=\"title\" id=\"CLOGB3880690628\" data-clog-name=\"hero-title\">English Learning Mine
     </p>
-    <p class=\"subtitle\" id=\"CLOGB3880599344\" data-clog-name=\"hero-subtitle\">Share it. Celebrate it. Build it.
+    <p class=\"subtitle\" id=\"CLOGB3880690629\" data-clog-name=\"hero-subtitle\">Share it. Celebrate it. Build it.
     </p>
   </div>
 </div>
 </section>
 "
          :hidden hidden :class class :html-id html-id :auto-place auto-place) 'hero)))
-    (setf (slot-value panel 'hero-subtitle) (attach-as-child clog-obj "CLOGB3880599344" :clog-type 'CLOG:CLOG-P :new-id t))
-    (setf (slot-value panel 'hero-title) (attach-as-child clog-obj "CLOGB3880599343" :clog-type 'CLOG:CLOG-P :new-id t))
-    (setf (slot-value panel 'hero-body-container) (attach-as-child clog-obj "CLOGB3880599342" :clog-type 'CLOG:CLOG-DIV :new-id t))
-    (setf (slot-value panel 'hero-body) (attach-as-child clog-obj "CLOGB3880599341" :clog-type 'CLOG:CLOG-DIV :new-id t))
-    (setf (slot-value panel 'hero-section) (attach-as-child clog-obj "CLOGB3880599340" :clog-type 'CLOG:CLOG-SPAN :new-id t))
+    (setf (slot-value panel 'hero-subtitle) (attach-as-child clog-obj "CLOGB3880690629" :clog-type 'CLOG:CLOG-P :new-id t))
+    (setf (slot-value panel 'hero-title) (attach-as-child clog-obj "CLOGB3880690628" :clog-type 'CLOG:CLOG-P :new-id t))
+    (setf (slot-value panel 'hero-body-container) (attach-as-child clog-obj "CLOGB3880690627" :clog-type 'CLOG:CLOG-DIV :new-id t))
+    (setf (slot-value panel 'hero-body) (attach-as-child clog-obj "CLOGB3880690626" :clog-type 'CLOG:CLOG-DIV :new-id t))
+    (setf (slot-value panel 'hero-section) (attach-as-child clog-obj "CLOGB3880690625" :clog-type 'CLOG:CLOG-SPAN :new-id t))
     panel))
