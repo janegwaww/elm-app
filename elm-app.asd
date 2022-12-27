@@ -18,13 +18,7 @@
                (:file "./info-list/recent-list")
                (:file "./footer/footer")
                (:file "./container/container")
-               (:file "content")
-               (:module "pages"
-                :components ((:file "index-page")
-                             (:file "essential-page")
-                             (:file "intermediate-page")
-                             (:file "advanced-page")
-                             (:file "professional-page"))))
+               (:file "content"))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
 
