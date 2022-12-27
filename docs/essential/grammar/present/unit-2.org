@@ -1,0 +1,27 @@
+* am/is/are (questions)
+
+** A
+
+- positive
+
+  | I    | am  |
+  |------+-----|
+  | he   | is  |
+  | she  | is  |
+  | it   | is  |
+  |------+-----|
+  | we   | are |
+  | you  | are |
+  | they | are |
+
+- question
+
+  | am  | I?   |
+  |-----+------|
+  | is  | he?  |
+  | is  | she? |
+  | is  | it?  |
+  |-----+------|
+  | are | we?  |
+  | are | you? |
+  | are | they |
