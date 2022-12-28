@@ -78,4 +78,9 @@
   (set-on-new-window 'on-new-advanced-page :path "/advanced")
   (set-on-new-window 'on-new-professional-page :path "/professional")
   (set-on-new-window 'on-new-window :path :default)
-  (open-browser))
+  (uiop:run-program (list "../clogframe"
+                          "ELM"
+                          (format nil "~A" 8080)
+                          (format nil "~A" 640) (format nil "~A" 420)))
+  ;;(open-browser)
+  )
