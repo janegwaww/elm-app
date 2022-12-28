@@ -4,7 +4,7 @@
 
 (in-package :elm-app)
 
-(defun on-new-index-page (body)
+(defun on-new-window (body)
   "On new window handler."
   (setf (title (html-document body)) "English Learning Mine")
   (create-navbar body)
@@ -70,7 +70,7 @@
 
 (defun start-app ()
   "Start App."
-  (initialize 'on-new-index-page
+  (initialize 'on-new-window
               :static-root (merge-pathnames
                             "./static-files/"
                             (asdf:system-source-directory :elm-app)))
@@ -78,5 +78,5 @@
   (set-on-new-window 'on-new-intermediate-page :path "/intermediate")
   (set-on-new-window 'on-new-advanced-page :path "/advanced")
   (set-on-new-window 'on-new-professional-page :path "/professional")
-  (set-on-new-window 'on-new-index-page :path :default)
+  (set-on-new-window 'on-new-window :path :default)
   (open-browser))
