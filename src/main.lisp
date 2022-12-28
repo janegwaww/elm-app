@@ -24,7 +24,8 @@
          (title (create-section (slot-value box 'container-div) :h1 :class "title" :content "Latest News")))
     (create-recent-list (slot-value box 'container-div)))
   (create-hero body)
-  (create-footer body))
+  (create-footer body)
+  (load-script (html-document body) "/js/navbar.js"))
 
 (defun on-new-essential-page (body)
   (setf (title (html-document body)) "Essential | ELM")

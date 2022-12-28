@@ -11,6 +11,7 @@
                (:file "main") ;; main
                (:file "elm-pro")
                (:file "./navbar/navbar")
+               (:file "./navbar/navbar-panel")
                (:file "./hero/hero")
                (:file "./menu-list/menu-list")
                (:file "./slip-box/level-slip-box")
