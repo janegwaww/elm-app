@@ -25,4 +25,15 @@
 
 (defmethod attach-navbar ((obj navbar))
   (init-navbar obj)
-  (setf (panel obj) (create-navbar-panel obj)))
+  (let* ((navbar-panel (create-navbar-panel obj))
+         (navbar-menu (slot-value navbar-panel 'navbar-menu))
+         (navbar-burger (slot-value navbar-panel 'navbar-burger)))
+    (setf (panel obj) navbar-panel)
+    (js-execute navbar-panel
+                (format nil
+                        "const navbarBurger = document.getElementsByClassName('navbar-burger')[0];
+navbarBurger.addEventListener('click', () => {
+const $target = document.getElementById('~a');
+navbarBurger.classList.toggle('is-active');
+$target.classList.toggle('is-active');
+});" (html-id navbar-menu)))))
