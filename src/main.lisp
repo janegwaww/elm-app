@@ -67,9 +67,10 @@
   (create-level-columns (create-container body :class "container is-max-desktop"))
   (create-footer body))
 
-(defun start-app ()
+(defun start-app (&key (port 8080) (start-browser t) app clogframe)
   "Start App."
   (initialize 'on-new-window
+              :port port
               :static-root (merge-pathnames
                             "./static-files/"
                             (asdf:system-source-directory :elm-app)))
@@ -78,9 +79,10 @@
   (set-on-new-window 'on-new-advanced-page :path "/advanced")
   (set-on-new-window 'on-new-professional-page :path "/professional")
   (set-on-new-window 'on-new-window :path :default)
-  (uiop:run-program (list "../clogframe"
-                          "ELM"
-                          (format nil "~A" 8080)
-                          (format nil "~A" 640) (format nil "~A" 420)))
-  ;;(open-browser)
-  )
+  (when clogframe
+      (uiop:run-program (list "./elm-app"
+                              "ELM"
+                              (format nil "~A" port)
+                              (format nil "~A" 640) (format nil "~A" 420))))
+  (when start-browser
+      (open-browser)))
