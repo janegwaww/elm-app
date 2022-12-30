@@ -67,7 +67,7 @@
   (create-level-columns (create-container body :class "container is-max-desktop"))
   (create-footer body))
 
-(defun start-app (&key (port 8080) (start-browser t) app clogframe)
+(defun start-app (&key (port 8080) start-browser (clogframe t))
   "Start App."
   (initialize 'on-new-window
               :port port
@@ -80,9 +80,10 @@
   (set-on-new-window 'on-new-professional-page :path "/professional")
   (set-on-new-window 'on-new-window :path :default)
   (when clogframe
-      (uiop:run-program (list "./elm-app"
-                              "ELM"
-                              (format nil "~A" port)
-                              (format nil "~A" 640) (format nil "~A" 420))))
+    (uiop:run-program (list "./elm-app-linux"
+                            "English Learning Mine"
+                            (format nil "~a" port)
+                            (format nil "~a" 640)
+                            (format nil "~a" 420))))
   (when start-browser
-      (open-browser)))
+    (open-browser)))

@@ -1,1 +1,1 @@
-sbcl --eval "(ql:quickload :elm-app)" --eval "(sb-ext:save-lisp-and-die #P\"elm-app\" :toplevel (lambda () (elm-app:start-app :start-browser nil :clogframe t)) :executable t :compression t)"
+sbcl --eval "(ql:quickload :elm-app)" --eval "(sb-ext:save-lisp-and-die #P\"elm-app-linux\" :toplevel (lambda () (elm-app:start-app :start-browser nil :clogframe t)) :executable t :compression t)"
