@@ -31,9 +31,9 @@
     (setf (panel obj) navbar-panel)
     (js-execute navbar-panel
                 (format nil
-                        "const navbarBurger = document.getElementsByClassName('navbar-burger')[0];
-navbarBurger.addEventListener('click', () => {
-const $target = document.getElementById('~a');
-navbarBurger.classList.toggle('is-active');
-$target.classList.toggle('is-active');
-});" (html-id navbar-menu)))))
+                        "const $navbarBurger = document.getElementsByClassName('navbar-burger')[0];
+                         $navbarBurger.addEventListener('click', () => {
+                         const $target = document.getElementById('~a');
+                         $navbarBurger.classList.toggle('is-active');
+                         $target.classList.toggle('is-active');});"
+                        (html-id navbar-menu)))))

@@ -23,13 +23,12 @@
                                 (hidden nil)
                                 (html-id nil)
                                 (auto-place t))
-  (let ((path (get-path obj))
-        (new-obj (create-div obj :class class
+  (let ((new-obj (create-div obj :class class
                                  :hidden hidden
                                  :html-id html-id
                                  :auto-place auto-place)))
     (change-class new-obj 'breadcrumb)
-    (attach-breadcrumb new-obj path)
+    (attach-breadcrumb new-obj)
     (create-ul-items new-obj)
     new-obj))
 
@@ -44,17 +43,13 @@
                     :link (setf address (concatenate 'string "/" address (car ls)))
                     :content (string-capitalize (car ls)))))))
 
-(defun get-path (body)
-  (check-type body clog:clog-body)
-  (path-name (location body)))
-
 (defun init-breadcrumb (obj)
   (check-type obj clog:clog-obj))
 
-(defmethod attach-breadcrumb ((obj breadcrumb) (path string))
+(defmethod attach-breadcrumb ((obj breadcrumb))
   (init-breadcrumb obj)
   (setf (panel obj) (create-breadcrumb-panel obj))
-  (setf (path obj) path))
+  (setf (path obj) (path-name (location (connection-body obj)))))
 
 (defun on-test-breadcrumb (body)
   (clog:debug-mode body)
