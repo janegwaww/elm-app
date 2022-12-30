@@ -18,7 +18,7 @@
     (create-level-info-box (slot-value lc 'column-item-3))
     (create-level-info-box (slot-value lc 'column-item-4)))
   (let* ((box (create-container (create-div body :class "block")))
-         (title (create-section (slot-value box 'container-div) :h1 :class "title" :content "Recent Activities")))
+         (title (create-section (slot-value box 'container-div) :h1 :class "title" :content "Bookmarks")))
     (create-recent-list (slot-value box 'container-div)))
   (let* ((box (create-container (create-div body :class "block")))
          (title (create-section (slot-value box 'container-div) :h1 :class "title" :content "Latest News")))
@@ -26,15 +26,53 @@
   (create-hero body)
   (create-footer body))
 
+(defun on-new-essential-page (body)
+  (setf (title (html-document body)) "Essential | ELM")
+  (let* ((nav (create-navbar body))
+         (bread (create-breadcrumb body))
+         (br (create-section body :br))
+         (box (create-div (create-div body :class "container") :class "columns")))
+    (create-menu-list box :class "column is-one-quarter")
+    (create-div box :class "column" :content "contetn")
+    (create-menu-list box :class "column is-one-fifth")
+    (create-footer body)))
 
+(defun on-new-intermediate-page (body)
+  (setf (title (html-document body)) "Intermediate | ELM")
+  (create-navbar body)
+  (create-breadcrumb body)
+  (create-section body :br)
+  (let ((box (create-div body :class "container")))
+    (create-menu-list box))
+  (create-level-columns (create-container body :class "container is-max-desktop"))
+  (create-footer body))
+
+(defun on-new-advanced-page (body)
+  (setf (title (html-document body)) "Advanced | ELM")
+  (create-navbar body)
+  (create-breadcrumb body)
+  (create-section body :br)
+  (let ((box (create-div body :class "container")))
+    (create-menu-list box))
+  (create-level-columns (create-container body :class "container is-max-desktop"))
+  (create-footer body))
+
+(defun on-new-professional-page (body)
+  (setf (title (html-document body)) "Professional | ELM")
+  (create-navbar body)
+  (create-breadcrumb body)
+  (create-section body :br)
+  (let ((box (create-div body :class "container")))
+    (create-menu-list box))
+  (create-level-columns (create-container body :class "container is-max-desktop"))
+  (create-footer body))
 
 (defun start-app ()
   "Start App."
-  (initialize
-   'on-new-window
-   :static-root (merge-pathnames
-                 "./static-files/"
-                 (asdf:system-source-directory :elm-app)))
+  (initialize 'on-new-window
+              :static-root (merge-pathnames
+                            "./static-files/"
+                            (asdf:system-source-directory :elm-app)))
   (set-on-new-window 'on-new-essential-page :path "/essential")
   (set-on-new-window 'on-new-intermediate-page :path "/intermediate")
   (set-on-new-window 'on-new-advanced-page :path "/advanced")

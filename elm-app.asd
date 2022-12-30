@@ -4,13 +4,14 @@
   :license "(CC BY-NC-SA 4.0)"
   :serial t
   :pathname "src"
-  :depends-on (:clog)
+  :depends-on (:clog :3bmd)
   :components ((:module "breadcrumb"
                 :components ((:file "breadcrumb")
                              (:file "breadcrumb-panel")))
                (:file "main") ;; main
                (:file "elm-pro")
                (:file "./navbar/navbar")
+               (:file "./navbar/navbar-panel")
                (:file "./hero/hero")
                (:file "./menu-list/menu-list")
                (:file "./slip-box/level-slip-box")
@@ -18,12 +19,7 @@
                (:file "./info-list/recent-list")
                (:file "./footer/footer")
                (:file "./container/container")
-               (:module "pages"
-                :components
-                ((:file "essential-page")
-                 (:file "intermediate-page")
-                 (:file "advanced-page")
-                 (:file "professional-page"))))
+               (:file "content"))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
 
