@@ -1,5 +1,5 @@
 (defpackage :elm-app
-  (:use :cl :clog :breadcrumb)
+  (:use :cl :clog :3bmd :breadcrumb)
   (:export start-app))
 
 (in-package :elm-app)
@@ -31,9 +31,12 @@
   (let* ((nav (create-navbar body))
          (bread (create-breadcrumb body))
          (br (create-section body :br))
-         (box (create-div (create-div body :class "container") :class "columns")))
+         (box (create-div (create-div body :class "container") :class "columns"))
+         (cont (create-content "../docs/README.md")))
     (create-menu-list box :class "column is-one-quarter")
-    (create-div box :class "column" :content "contetn")
+
+    (create-div box :class "column content" :content
+                (with-output-to-string (str) (md2html cont str)))
     (create-menu-list box :class "column is-one-fifth")
     (create-footer body)))
 
