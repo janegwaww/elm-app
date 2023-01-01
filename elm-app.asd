@@ -19,6 +19,7 @@
                (:file "./info-list/recent-list")
                (:file "./footer/footer")
                (:file "./container/container")
+               (:file "references")
                (:file "content"))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
