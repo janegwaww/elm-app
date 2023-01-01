@@ -25,3 +25,42 @@
   | are | we?  |
   | are | you? |
   | are | they |
+
+- [image]
+  - What's your name?
+  - David.
+  - Are you married?
+  - No, Tm single.
+  - How old are you?
+  - 25.
+  - Are you a student?
+  - Yes, I am.
+
+- list
+  - 'Am I late?' 'No, you're on time.'
+  - 'Is your mother at home?' 'No, she's out.'
+  - 'Are your parents at home?' 'No, they're out.'
+  - 'Is it cold in your room?' 'Yes, a little.'
+  - Your shoes are nice. Are they new?
+
+- We say:
+  - Is she at home? / Is your mother at home? (not 'Is at home your mother?')
+  - Are they new? / Are your shoes new? (not "Are new your shoes?')
+
+** B
+
+- *Where ... ? / What ... ? / Who ... ? / How ... ? / Why ... ?*
+  - Where is your mother? Is she at home?
+  - 'What colour is your car?' 'It's red.'
+  - How are your parents? Are they well?
+  - 'How much are these postcards?' 'Fifty pence.'
+  - 'Where are you from?' 'Canada.'
+  - 'How old is Joe?' 'He's 24.'
+  - Why are you angry?
+- what's = what is who's = who is how's = how is where's = where is
+  - What's the time?
+  - Where's Jill?
+  - Who's that man?
+  - How's your father?
+
+** C
