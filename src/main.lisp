@@ -32,7 +32,7 @@
          (bread (create-breadcrumb body))
          (br (create-section body :br))
          (box (create-div (create-div body :class "container") :class "columns"))
-         (cont (create-content "../docs/README.md")))
+         (cont (create-content "../docs/essential/README.md")))
     (create-menu-list box :class "column is-one-quarter")
 
     (create-div box :class "column content" :content

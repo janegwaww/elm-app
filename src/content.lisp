@@ -17,7 +17,8 @@
   (:documentation "Convert markdown to html."))
 
 (defmethod md2html ((cont content) stream)
-  (parse-and-print-to-stream (slot-value cont 'url) stream :format :html))
+  (let ((3bmd-tables:*tables* t))
+    (parse-and-print-to-stream (slot-value cont 'url) stream :format :html)))
 
 (defun dirs (path)
   (probe-file path)

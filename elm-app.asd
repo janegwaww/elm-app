@@ -4,7 +4,7 @@
   :license "(CC BY-NC-SA 4.0)"
   :serial t
   :pathname "src"
-  :depends-on (:clog :3bmd)
+  :depends-on (:clog :3bmd :3bmd-ext-tables)
   :components ((:module "breadcrumb"
                 :components ((:file "breadcrumb")
                              (:file "breadcrumb-panel")))
