@@ -4,7 +4,7 @@
   :license "(CC BY-NC-SA 4.0)"
   :serial t
   :pathname "src"
-  :depends-on (:clog :3bmd)
+  :depends-on (:clog :3bmd :3bmd-ext-tables)
   :components ((:module "breadcrumb"
                 :components ((:file "breadcrumb")
                              (:file "breadcrumb-panel")))
@@ -19,6 +19,7 @@
                (:file "./info-list/recent-list")
                (:file "./footer/footer")
                (:file "./container/container")
+               (:file "references")
                (:file "content"))
   :description "Learning English App"
   :in-order-to ((test-op (test-op :elm-app/tests))))
